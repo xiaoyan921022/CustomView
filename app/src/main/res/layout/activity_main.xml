@@ -15,7 +15,7 @@
             android:id="@+id/btn_canvas"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:text="canvas" />
+            android:text="canvas1" />
 
         <Button
             android:id="@+id/btn_canvas2"
@@ -24,16 +24,28 @@
             android:layout_marginLeft="5dp"
             android:text="canvas2" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/btn_bezier1"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:layout_marginLeft="5dp"
-            android:text="Bezier" />
+            android:text="Bezier1" />
 
         <Button
             android:id="@+id/btn_bezier2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:text="Bezier2" />
+
+        <Button
+            android:id="@+id/btn_bezier3"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_marginLeft="5dp"
@@ -58,6 +70,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone" />
+
+    <com.test.customview.Bezier2
+        android:id="@+id/bezier2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
 
     <com.test.customview.MagicCircle
         android:id="@+id/circle"
