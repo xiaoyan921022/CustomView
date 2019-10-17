@@ -1,24 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <!--<com.test.customview.CustomView-->
-        <!--android:id="@+id/custom"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_canvas"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="canvas" />
+
+        <Button
+            android:id="@+id/btn_canvas2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:text="canvas2" />
 
 
-    <!--<com.test.customview.Bezier-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent" />-->
+        <Button
+            android:id="@+id/btn_bezier1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:text="Bezier" />
+
+        <Button
+            android:id="@+id/btn_bezier2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:text="Magic" />
+
+    </LinearLayout>
+
+    <com.test.customview.CustomView
+        android:id="@+id/canvas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+    <com.test.customview.CustomView2
+        android:id="@+id/canvas2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+    <com.test.customview.Bezier
+        android:id="@+id/bezier"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
 
     <com.test.customview.MagicCircle
         android:id="@+id/circle"
         android:layout_width="match_parent"
-        android:layout_centerInParent="true"
-        android:layout_height="200dp" />
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:visibility="gone" />
 
-</RelativeLayout>
+</LinearLayout>
